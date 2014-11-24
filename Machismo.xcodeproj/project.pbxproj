@@ -14,6 +14,10 @@
 		C9B5FADA1A223D9500B005EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9B5FAD91A223D9500B005EB /* Images.xcassets */; };
 		C9B5FADD1A223D9500B005EB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9B5FADB1A223D9500B005EB /* LaunchScreen.xib */; };
 		C9B5FAE91A223D9500B005EB /* MachismoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B5FAE81A223D9500B005EB /* MachismoTests.m */; };
+		C9B5FAF41A223E0800B005EB /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B5FAF31A223E0800B005EB /* Card.m */; };
+		C9B5FAF81A22ADD100B005EB /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B5FAF71A22ADD100B005EB /* Deck.m */; };
+		C9B5FAFB1A22B3EE00B005EB /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B5FAFA1A22B3EE00B005EB /* PlayingCard.m */; };
+		C9B5FAFE1A22BF0E00B005EB /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B5FAFD1A22BF0E00B005EB /* PlayingCardDeck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		C9B5FAE21A223D9500B005EB /* MachismoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MachismoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B5FAE71A223D9500B005EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9B5FAE81A223D9500B005EB /* MachismoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachismoTests.m; sourceTree = "<group>"; };
+		C9B5FAF21A223E0800B005EB /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Model/Card.h; sourceTree = "<group>"; };
+		C9B5FAF31A223E0800B005EB /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Model/Card.m; sourceTree = "<group>"; };
+		C9B5FAF61A22ADD100B005EB /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		C9B5FAF71A22ADD100B005EB /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		C9B5FAF91A22B3EE00B005EB /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		C9B5FAFA1A22B3EE00B005EB /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
+		C9B5FAFC1A22BF0E00B005EB /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
+		C9B5FAFD1A22BF0E00B005EB /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +100,7 @@
 				C9B5FAD61A223D9500B005EB /* Main.storyboard */,
 				C9B5FAD91A223D9500B005EB /* Images.xcassets */,
 				C9B5FADB1A223D9500B005EB /* LaunchScreen.xib */,
+				C9B5FAF51A223E1300B005EB /* Model */,
 				C9B5FACC1A223D9500B005EB /* Supporting Files */,
 			);
 			path = Machismo;
@@ -117,6 +130,21 @@
 				C9B5FAE71A223D9500B005EB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9B5FAF51A223E1300B005EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C9B5FAF21A223E0800B005EB /* Card.h */,
+				C9B5FAF31A223E0800B005EB /* Card.m */,
+				C9B5FAF61A22ADD100B005EB /* Deck.h */,
+				C9B5FAF71A22ADD100B005EB /* Deck.m */,
+				C9B5FAF91A22B3EE00B005EB /* PlayingCard.h */,
+				C9B5FAFA1A22B3EE00B005EB /* PlayingCard.m */,
+				C9B5FAFC1A22BF0E00B005EB /* PlayingCardDeck.h */,
+				C9B5FAFD1A22BF0E00B005EB /* PlayingCardDeck.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +247,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9B5FAFB1A22B3EE00B005EB /* PlayingCard.m in Sources */,
+				C9B5FAF81A22ADD100B005EB /* Deck.m in Sources */,
 				C9B5FAD51A223D9500B005EB /* ViewController.m in Sources */,
 				C9B5FAD21A223D9500B005EB /* AppDelegate.m in Sources */,
+				C9B5FAFE1A22BF0E00B005EB /* PlayingCardDeck.m in Sources */,
 				C9B5FACF1A223D9500B005EB /* main.m in Sources */,
+				C9B5FAF41A223E0800B005EB /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
