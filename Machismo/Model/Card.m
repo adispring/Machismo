@@ -16,6 +16,17 @@
 
 @implementation Card
 
+@synthesize chosen = _chosen;
+@synthesize matched = _matched;
+
+- (BOOL)isChosen{
+    return _chosen;
+}
+
+- (BOOL)isMatched {
+    return _matched;
+}
+
 -(int)match:(NSArray *)otherCards
 {
     int score = 0;
@@ -42,6 +53,10 @@
 {
     _contents = contents;
 }
+
+
+
+
 
 @end
 
